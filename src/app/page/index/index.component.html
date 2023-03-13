@@ -1,0 +1,183 @@
+<div id="gs_content">
+    <div class="gs_main_box_1">
+        <div class="inner">
+            <div class="gs_main_curver"></div>
+            <div class="gs_main_img"><img src="../../../assets/main_img_3.jpg"></div>
+            <div class="gs_main_content">
+                <h1>한걸음 기업성장을 위한<br />토탈 금융지원 서비스</h1>
+                <p>기업의 성장과 성공의 기반이 되어 드리겠습니다.</p>
+            </div>
+        </div>
+    </div>
+    <div class="gs_main_box_2">
+        <div id="gs_tab_btn">
+            <ul class="inner">
+                <li class="gs_button _1 select"><span>기업교육</span></li>
+                <li class="gs_button _2"><span>기업자금</span></li>
+                <li class="gs_button _3"><span>기업회생</span></li>
+                <li class="gs_button _4"><span>법인컨설팅</span></li>
+            </ul>
+        </div>
+
+        <ul id="gs_tab_box">
+            <li class="gs_box _1 select">
+                <div class="inner">
+                    <h1>business<br />education</h1>
+                    <div class="gs_tab_con_wrap">
+                        <span class="gs_tab_con_list">소상공인 업종별 기업교육</span>
+                        <span class="gs_tab_con_list">소상공인을 위한 업종별 전문기술 교육비지원!</span>
+                        <span class="gs_tab_con_list">경영 개선교육, 전용 교육장제공</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gs_box _2">
+                <div class="inner">
+                    <h1>business<br />Funding</h1>
+                    <div class="gs_tab_con_wrap">
+                        <span class="gs_tab_con_list">합리적인 분야 별 기업자금</span>
+                        <span class="gs_tab_con_list">소상공인의 분야를 정확히 진단 및 자금 조달!</span>
+                        <span class="gs_tab_con_list">정확한 진단, 기업에 알맞는 자금조달</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gs_box _3">
+                <div class="inner">
+                    <h1>business<br />rehabilitation</h1>
+                    <div class="gs_tab_con_wrap">
+                        <span class="gs_tab_con_list">전문적인 기업회생 </span>
+                        <span class="gs_tab_con_list">신용전문가의 채무조정 상담·솔루션! </span>
+                        <span class="gs_tab_con_list">분야별 전문가를 통한 1:1 컨설팅 </span>
+                    </div>
+                </div>
+            </li>
+            <li class="gs_box _4">
+                <div class="inner">
+                    <h1>Corporate<br />Consulting</h1>
+                    <div class="gs_tab_con_wrap">
+                        <span class="gs_tab_con_list">특허, 법률, 세무 등 전문기술 컨설팅 </span>
+                        <span class="gs_tab_con_list">법인 전문가와의 복잡한 법적 문제 해결!</span>
+                        <span class="gs_tab_con_list">마케팅, 영업홍보 , 직원관리</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="gs_main_box_3">
+
+        <section class="carouselContainer">
+            <div class="title">
+                <h2>지원사례</h2>
+                <div class="titleBtn">
+                    <p>최적의 시스템과 노하우를 직접 경험하신 기업의 승인사례입니다.</p>
+                    <div>
+                        <button (click)="carousel.prev()">왼쪽</button>
+                        <button (click)="carousel.next()">오른쪽</button>
+                    </div>
+                </div>
+            </div>
+
+            <ngb-carousel #carousel [interval]="1000000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                (slide)="onSlide($event)">
+                <ng-template ngbSlide *ngFor="let company of carouselData; let i=index">
+
+                    <ul class="list">
+                        <li class="gs_ex_box">
+                            <div class="gs_ex_box_left">
+                                <span class="img"><img src="../../../assets/Ellipse_10.png"></span>
+                                <div class="name">
+                                    <h4>{{company.first.title}}</h4>
+                                    <p>[{{company.first.categorys}}]</p>
+                                </div>
+                            </div>
+                            <div class="gs_ex_box_right">
+                                <div class="sales">
+                                    <span class="year">업력: {{company.first.careers}}년</span>
+                                    <span class="price">{{company.first.sales}}억</span>
+                                </div>
+                                <div class="detail">
+                                    해당업종 {{company.first.totalcreer}}년 경력<br />
+                                    {{company.first.case1}}<br />
+                                    {{company.first.case2}}
+                                    {{company.first.case3}}
+                                    {{company.first.case4}}
+
+                                </div>
+                                <div class="service">{{company.first.solutionstart}}<br />
+                                    {{company.first.totalsolution}}</div>
+                            </div>
+                        </li>
+                        <li class="gs_ex_box">
+                            <div class="gs_ex_box_left">
+                                <span class="img"><img src="../../../assets/Ellipse_10.png"></span>
+                                <div class="name">
+                                    <h4>{{company.second.title}}</h4>
+                                    <p>[{{company.second.categorys}}]</p>
+                                </div>
+                            </div>
+                            <div class="gs_ex_box_right">
+                                <div class="sales"><span class="year">업력: {{company.second.careers}}년</span><span
+                                        class="price">{{company.second.sales}}억</span></div>
+                                <div class="detail">
+                                    해당업종 {{company.second.totalcreer}}년 경력<br />
+                                    {{company.second.case1}}<br />
+                                    {{company.second.case2}}
+                                </div>
+                                <div class="service">{{company.second.solutionstart}}<br />
+                                    {{company.second.totalsolution}}</div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </ng-template>
+            </ngb-carousel>
+        </section>
+    </div>
+
+    <ngb-carousel>
+        <ng-template ngbSlide class="staticcarouselBox">
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+
+        </ng-template>
+        <ng-template ngbSlide class="staticcarouselBox">
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+            <div class="picsum-img-wrapper">
+                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+            </div>
+        </ng-template>
+
+    </ngb-carousel>
+
+</div>

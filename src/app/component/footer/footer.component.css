@@ -1,0 +1,59 @@
+:root {
+  --main_color_1: #ffc500; /*  var(--main_color_1) */
+  --main_color_2: #2f2c37; /*  var(--main_color_2) */
+  --sub_color_3: #c4c4c4; /*  var(--sub_color_3) */
+  --sub_color_4: #f4f4f4; /*  var(--sub_color_4) */
+  --sub_color_5: #f8f8f8; /*  var(--sub_color_5) */
+
+  --width_: 1280px; /*  var(--width_) */
+  --font_: 15px; /*  var(--font_) */
+}
+
+#gs_layout_footer {
+  margin-top: 100px;
+  background-color: #2f2c37;
+  font-weight: bolder;
+}
+#gs_layout_footer .footinner {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 0;
+  padding: 70px 0;
+  line-height: 23px;
+}
+#gs_layout_footer .footinner .gs_footer_logo {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+  margin-right: 40px;
+}
+
+#gs_layout_footer .footinner .gs_footer_logo img {
+  width: 200px;
+  height: 130px;
+  border: solid 2px blue;
+}
+#gs_layout_footer .footinner .gs_footer_detail {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+}
+
+#gs_layout_footer .footinner .gs_footer_detail ul li {
+  width: fit-content;
+  display: inline;
+}
+
+#gs_layout_footer .footinner .gs_footer_util {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  font-size: 15px;
+  text-align: right;
+}
+.gs_footer_util li {
+  list-style: none;
+  color: #fff;
+}

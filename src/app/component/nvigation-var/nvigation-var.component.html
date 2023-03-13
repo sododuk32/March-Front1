@@ -1,0 +1,21 @@
+<header id="gs_layout_header">
+    <div class="inner">
+        <div class="gs_top_logo">
+            <a href="/"><img src="img/logo.png" /></a>
+        </div>
+        <ul class="gs_top_cate">
+            <li id={{key.path}} *ngFor="let key of  navArr " routerLink={{key.path}}><span>{{key.text}}</span></li>
+
+            <span class="gs_top_bar">　</span>
+        </ul>
+        <div class="gs_top_login">
+            <div class="gs_login _on" style="display:none;">
+                <a href="/">LOOUT</a>
+            </div>
+            <div class="gs_login _off">
+                <!-- <a href="/">JOIN</a> -->
+                <a href="/">LOGIN</a>
+            </div>
+        </div>
+    </div>
+</header>

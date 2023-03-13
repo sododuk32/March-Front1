@@ -1,0 +1,95 @@
+:root {
+  --main_color_1: #ffc500; /*  var(--main_color_1) */
+  --main_color_2: #2f2c37; /*  var(--main_color_2) */
+  --sub_color_3: #c4c4c4; /*  var(--sub_color_3) */
+  --sub_color_4: #f4f4f4; /*  var(--sub_color_4) */
+  --sub_color_5: #f8f8f8; /*  var(--sub_color_5) */
+
+  --width_: 1280px; /*  var(--width_) */
+  --font_: 15px; /*  var(--font_) */
+}
+
+#gs_layout_header {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+}
+#gs_layout_header .inner {
+  position: relative;
+  width: 1280px !important;
+  margin: 0 auto;
+  text-align: left;
+  height: 100px;
+}
+
+/* gs_layout_header height값변경  */
+
+#gs_layout_header .gs_top_logo a {
+  display: inline-block;
+  padding: 20px 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+#gs_layout_header .gs_top_logo a img {
+  width: 130px;
+  height: 80px;
+}
+/*  gs_top_logo image 크기 수정 */
+#gs_layout_header ul.gs_top_cate {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  vertical-align: bottom;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ul.gs_top_cate margin top , bottom 0 으로 변경  */
+
+#gs_layout_header ul.gs_top_cate li {
+  display: inline-block;
+  line-height: 70px;
+  margin-left: 80px;
+}
+#gs_layout_header ul.gs_top_cate li a {
+  font-weight: bold;
+  font-size: xx-large;
+}
+#gs_layout_header ul.gs_top_cate li a:hover {
+  color: #ffc500;
+}
+#gs_layout_header ul.gs_top_cate .gs_top_bar {
+  position: absolute;
+  bottom: 20px;
+  left: 123px;
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #2f2c37;
+  font-size: 0;
+}
+
+#gs_layout_header .gs_top_login .gs_login {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+#gs_layout_header .gs_top_login .gs_login a {
+  display: inline-block;
+  background-color: #c4c4c4;
+  margin-left: 5px;
+  border-radius: 50px;
+  padding: 7px 25px;
+  font-size: 12px;
+  font-weight: 500;
+}
+#gs_layout_header .gs_top_login .gs_login a:last-child {
+  background-color: #ffc500;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/* .gs_login a:last-child color:white 제거  */
