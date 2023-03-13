@@ -77,7 +77,7 @@
                 </div>
             </div>
 
-            <ngb-carousel #carousel [interval]="1000000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+            <ngb-carousel #carousel [interval]="4000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
                 (slide)="onSlide($event)">
                 <ng-template ngbSlide *ngFor="let company of carouselData; let i=index">
 
@@ -135,49 +135,6 @@
         </section>
     </div>
 
-    <ngb-carousel>
-        <ng-template ngbSlide class="staticcarouselBox">
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-
-        </ng-template>
-        <ng-template ngbSlide class="staticcarouselBox">
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-            <div class="picsum-img-wrapper">
-                <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
-            </div>
-        </ng-template>
-
-    </ngb-carousel>
+    <ngbd-carousel-pause></ngbd-carousel-pause>
 
 </div>

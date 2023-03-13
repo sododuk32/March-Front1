@@ -1,58 +1,44 @@
-<ngb-carousel #carousel [interval]="6000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
-  (slide)="onSlide($event)">
-  <ng-template ngbSlide *ngFor="let company of carouselData; let i=index">
-    <ul class="picsum-img-wrapper">
-      <li class="gs_ex_box" ngbSlide>
-        <div class="gs_ex_box_left">
-          <span class="img"><img src="/March-Front/src/assets/Ellipse_10.png"></span>
-          <div class="name">
-            <h4>{{carouselData[i].title}}</h4>
-            <p>{{carouselData[i].categorys}}</p>
-          </div>
+<ngb-carousel #staticCarousel [interval]="100000" [wrap]="false">
+  <ng-template ngbSlide>
+    <section class="imgBox">
+      <div class="row">
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
         </div>
-        <div class="gs_ex_box_right">
-          <div class="sales"><span class="year">{{carouselData[i].creers}}</span><span
-              class="price">{{carouselData[i].sales}}</span>
-          </div>
-          <div class="detail">
-            <span>{{carouselData[i].span1}}</span>
-            <span>{{carouselData[i].detailText1}}</span>
-            <span>{{carouselData[i].detailText2}}</span>
-            <span>{{carouselData[i].detailText3}}</span>
-          </div>
-          <div class="service"> <span>{{carouselData[i].subText1}}</span>
-            <br />
-            <span>{{carouselData[i].subText2}}</span>
-          </div>
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
         </div>
-        <div class="gs_ex_box_left">
-          <span class="img"><img src="/March-Front/src/assets/Ellipse_10.png"></span>
-          <div class="name">
-            <h4>{{carouselData[i+1].title}}</h4>
-            <p>{{carouselData[i+1].categorys}}</p>
-          </div>
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
         </div>
-        <div class="gs_ex_box_right">
-          <div class="sales"><span class="year">{{carouselData[i+1].creers}}</span><span
-              class="price">{{carouselData[i+1].sales}}</span>
-          </div>
-          <div class="detail">
-            <span>{{carouselData[i+1].span1}}</span>
-            <span>{{carouselData[i+1].detailText1}}</span>
-            <span>{{carouselData[i+1].detailText2}}</span>
-            <span>{{carouselData[i+1].detailText3}}</span>
-          </div>
-          <div class="service"> <span>{{carouselData[i+1].subText1}}</span>
-            <br />
-            <span>{{carouselData[i+1].subText2}}</span>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
         </div>
-      </li>
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+        </div>
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+        </div>
+      </div>
 
-    </ul>
+    </section>
   </ng-template>
-</ngb-carousel>
+  <ng-template ngbSlide>
+    <section class="imgBox">
+      <div class="row">
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+        </div>
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+        </div>
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+        </div>
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+        </div>
+        <div class="col-sm-4 box"> <img src="../../../assets/Rectangle 50.jpg" alt="Random first slide" />
+        </div>
+      </div>
+    </section>
+  </ng-template>
 
-<button type="button" (click)="togglePaused()" class="btn btn-outline-dark btn-sm">
-  {{ paused ? "Cycle" : "Pause" }}
-</button>
+</ngb-carousel>
