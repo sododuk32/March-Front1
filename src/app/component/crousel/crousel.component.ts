@@ -13,6 +13,19 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [NgbCarouselModule, NgFor, FormsModule],
   templateUrl: 'crousel.component.html',
+  styles: [
+    `
+      .imgBox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .box {
+        margin-top: 10px;
+      }
+    `,
+  ],
 })
 export class CrouselComponent {
   carouselData = [
